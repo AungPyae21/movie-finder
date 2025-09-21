@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <div id="movie-detail-container">
+      <div class="detail-content">
+        <div class="detail-header">
+          <a href="/" class="back-btn">&larr; Back to Home</a>
+        </div>
+
+        <div class="detail-body">
+          <div class="detail-poster">
+            <img id="detail-poster-img" src="" alt="Movie Poster" />
+          </div>
+          <div class="detail-info">
+            <h1 id="detail-title">Movie Title Loading...</h1>
+            <div class="info-meta">
+              <span id="detail-rating" class="rating">⭐ 0.0</span>
+              <span id="detail-release-date">Release Date</span>
+            </div>
+            <div id="detail-genres" class="genres-pills"></div>
+            <h2>Overview</h2>
+            <p id="detail-overview">Loading movie description...</p>
+            <button id="watchlist-btn" class="watchlist-btn">
+              Add to Watchlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="detail.js" defer></script>
+  </body>
+</html>

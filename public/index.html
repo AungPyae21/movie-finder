@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2349b0ac16.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Movie Finder</h1>
+        <nav class="genres">
+          <button class="genre-btn active" data-genre="popular">Popular</button>
+          <button class="genre-btn" data-genre="10749">Romance</button>
+          <button class="genre-btn" data-genre="28">Action</button>
+          <button class="genre-btn" data-genre="27">Horror</button>
+          <button class="genre-btn" data-genre="35">Comedy</button>
+          <button class="genre-btn" data-genre="18">Drama</button>
+          <button class="genre-btn" id="watchlist-nav-btn">My Watchlist</button>
+        </nav>
+        <div class="header-controls">
+          <button
+            id="search-nav-btn"
+            class="icon-btn"
+            aria-label="Go to search"
+          >
+            <i class="fas fa">🔍</i>
+          </button>
+
+          <button id="theme-toggle-btn" class="theme-toggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="banner" id="search-banner">
+        <div class="user-info">
+          <h2>Phyo Zay Aung</h2>
+          <p>ID: 240702403920</p>
+        </div>
+        <p class="tagline">
+          Discover amazing movies and find your next favorite film.
+        </p>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a movie..."
+          />
+        </form>
+      </section>
+
+      <section class="results-section">
+        <h2 id="results-heading">Popular Movies</h2>
+        <div id="movie-container"></div>
+
+        <div id="load-more-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Movie Finder. Data provided by
+        <a href="https://www.themoviedb.org/" target="_blank">TMDB</a>.
+      </p>
+    </footer>
+  </body>
+</html>
