@@ -1,6 +1,7 @@
 # movie-finder
+
 A responsive web application for discovering popular, genre-specific, and searched movies using the TMDB API. The app features a dynamic detail page for each movie and a personal watchlist saved to local storage.
-Live Demo at ####
+Live Demo at https://movie-finder-raw5.vercel.app/
 
 Features
 
